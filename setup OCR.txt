@@ -1,0 +1,38 @@
+==============================================
+
+#https://github.com/tesseract-ocr/tesseract/wiki
+
+#https://github.com/UB-Mannheim/tesseract/wiki
+
+#PATH !!! pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+
+
+==============================================
+
+#https://www.geeksforgeeks.org/python-reading-contents-of-pdf-using-ocr-optical-character-recognition/
+
+#https://github.com/UB-Mannheim/tesseract/wiki (install tesseract-ocr-w64-setup-v5.0.0-alpha.20200223.exe) ; +add path C:\Program Files\Tesseract-OCR
+
+#pip install pytesseract
+
+#https://stackoverflow.com/questions/50951955/pytesseract-tesseractnotfound-error-tesseract-is-not-installed-or-its-not-i
+
+#pip install PIL #pip install Pillow ; #from PIL import Image
+
+#pip install pytesseract
+
+#pip install pdf2image
+
+#pip apt-get install tesseract-ocr
+
+#pip install image
+
+#pip install --no-index -f http://effbot.org/downloads/ -U PIL --trusted-host effbot.org
+
+#conda install -c conda-forge poppler
+
+#pip install tesseract
+
+
+
+
