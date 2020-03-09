@@ -3,7 +3,7 @@
 from PIL import Image
 import pytesseract
 
-# 2. Tesseract set
+# 2. Tesseract up + lang="bul" for Bulgarian /remove for English/
 
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
@@ -18,4 +18,4 @@ text = pytesseract.image_to_string(jpgfile, lang="bul") #, (img, lang="bul")
 
 with open('OCR _From_Picture.txt', 'w', encoding="utf-8") as f: #, encoding="utf-8") for Bulgarian
     print(text, file=f)
-    
+
