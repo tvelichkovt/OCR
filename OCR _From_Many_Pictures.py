@@ -1,3 +1,6 @@
+'''
+'''
+
 # 1. Imports
 
 from PIL import Image 
