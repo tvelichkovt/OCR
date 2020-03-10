@@ -1,10 +1,14 @@
+'''
+'''
+
 # 1. Imports
 
 from PIL import Image 
 from pdf2image import convert_from_path
 import pytesseract 
 
-# 2. Conversion into jpeg
+
+# 1. Conversion into jpeg
 
 pages = convert_from_path('bgregistryagency3pages.pdf', 500)
 for page in pages:
@@ -17,7 +21,7 @@ for page in pages:
     page.save(filename, 'JPEG') 
     image_counter = image_counter + 1
 
-# 3. Save txt file + encoding="utf-8" for Bulgarian /remove for English/
+# 2. Save txt file + encoding="utf-8" for Bulgarian /remove for English/
     
 filelimit = image_counter-1
 outfile = "OCR _From_Pdfs.txt"
@@ -25,7 +29,7 @@ outfile = "OCR _From_Pdfs.txt"
 f = open(outfile, "a", encoding="utf-8")#, encoding="utf-8") for Bulgarian
 #f = open(outfile, "a") for English Language
 
-# 4 Iterate from 1 to total number of pages, Tesseract up + lang="bul"
+# 3 Iterate from 1 to total number of pages, Tesseract up + lang="bul"
 
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe' #, encoding="utf-8") for Bulgarian
 
