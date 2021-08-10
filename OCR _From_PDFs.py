@@ -10,7 +10,7 @@ import pytesseract
 
 # 1. Conversion into jpeg
 
-pages = convert_from_path('bgregistryagency3pages.pdf', 500)
+pages = convert_from_path('1.pdf', 500)
 for page in pages:
     page.save('page_.jpg', 'JPEG')
 
